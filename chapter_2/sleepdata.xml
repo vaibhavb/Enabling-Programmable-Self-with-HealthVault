@@ -1,0 +1,30 @@
+<thing><type-id name='Sleep Session'>11c52484-7f1a-11db-aeac-87d355d89593</type-id><flags>0</flags><data-xml><sleep-am><when><date><y>2011</y><m>06</m><d>20</d></date><time><h>00</h><m>0</m><s>0</s></time></when><bed-time><h>23</h><m>17</m><s>0</s></bed-time><wake-time><h>7</h><m>47</m><s>0</s></wake-time><sleep-minutes>481</sleep-minutes><settling-minutes>3</settling-minutes>
+<awakening><when><h>3</h><m>0</m></when><minutes>10</minutes></awakening>
+<wake-state>1</wake-state></sleep-am><common><source>FitBit</source></common></data-xml></thing>
+<thing><type-id name='Sleep Session'>11c52484-7f1a-11db-aeac-87d355d89593</type-id><flags>0</flags><data-xml><sleep-am><when><date><y>2011</y><m>06</m><d>21</d></date><time><h>00</h><m>0</m><s>0</s></time></when><bed-time><h>0</h><m>28</m><s>0</s></bed-time><wake-time><h>6</h><m>21</m><s>0</s></wake-time><sleep-minutes>320</sleep-minutes><settling-minutes>18</settling-minutes>
+<awakening><when><h>3</h><m>0</m></when><minutes>10</minutes></awakening>
+<wake-state>1</wake-state></sleep-am><common><source>FitBit</source></common></data-xml></thing>
+<thing><type-id name='Sleep Session'>11c52484-7f1a-11db-aeac-87d355d89593</type-id><flags>0</flags><data-xml><sleep-am><when><date><y>2011</y><m>06</m><d>22</d></date><time><h>00</h><m>0</m><s>0</s></time></when><bed-time><h>22</h><m>52</m><s>0</s></bed-time><wake-time><h>6</h><m>34</m><s>0</s></wake-time><sleep-minutes>440</sleep-minutes><settling-minutes>4</settling-minutes>
+<awakening><when><h>3</h><m>0</m></when><minutes>10</minutes></awakening>
+<wake-state>1</wake-state></sleep-am><common><source>FitBit</source></common></data-xml></thing>
+<thing><type-id name='Sleep Session'>11c52484-7f1a-11db-aeac-87d355d89593</type-id><flags>0</flags><data-xml><sleep-am><when><date><y>2011</y><m>06</m><d>23</d></date><time><h>00</h><m>0</m><s>0</s></time></when><bed-time><h>23</h><m>30</m><s>0</s></bed-time><wake-time><h>6</h><m>30</m><s>0</s></wake-time><sleep-minutes>404</sleep-minutes><settling-minutes>5</settling-minutes>
+<awakening><when><h>3</h><m>0</m></when><minutes>10</minutes></awakening>
+<wake-state>1</wake-state></sleep-am><common><source>FitBit</source></common></data-xml></thing>
+<thing><type-id name='Sleep Session'>11c52484-7f1a-11db-aeac-87d355d89593</type-id><flags>0</flags><data-xml><sleep-am><when><date><y>2011</y><m>06</m><d>24</d></date><time><h>00</h><m>0</m><s>0</s></time></when><bed-time><h>23</h><m>35</m><s>0</s></bed-time><wake-time><h>7</h><m>0</m><s>0</s></wake-time><sleep-minutes>425</sleep-minutes><settling-minutes>7</settling-minutes>
+<awakening><when><h>3</h><m>0</m></when><minutes>10</minutes></awakening>
+<wake-state>1</wake-state></sleep-am><common><source>FitBit</source></common></data-xml></thing>
+<thing><type-id name='Sleep Session'>11c52484-7f1a-11db-aeac-87d355d89593</type-id><flags>0</flags><data-xml><sleep-am><when><date><y>2011</y><m>06</m><d>25</d></date><time><h>00</h><m>0</m><s>0</s></time></when><bed-time><h>23</h><m>27</m><s>0</s></bed-time><wake-time><h>6</h><m>50</m><s>0</s></wake-time><sleep-minutes>428</sleep-minutes><settling-minutes>2</settling-minutes>
+<awakening><when><h>3</h><m>0</m></when><minutes>10</minutes></awakening>
+<wake-state>1</wake-state></sleep-am><common><source>FitBit</source></common></data-xml></thing>
+<thing><type-id name='Sleep Session'>11c52484-7f1a-11db-aeac-87d355d89593</type-id><flags>0</flags><data-xml><sleep-am><when><date><y>2011</y><m>06</m><d>26</d></date><time><h>00</h><m>0</m><s>0</s></time></when><bed-time><h>23</h><m>15</m><s>0</s></bed-time><wake-time><h>8</h><m>0</m><s>0</s></wake-time><sleep-minutes>506</sleep-minutes><settling-minutes>7</settling-minutes>
+<awakening><when><h>3</h><m>0</m></when><minutes>10</minutes></awakening>
+<wake-state>1</wake-state></sleep-am><common><source>FitBit</source></common></data-xml></thing>
+<thing><type-id name='Sleep Session'>11c52484-7f1a-11db-aeac-87d355d89593</type-id><flags>0</flags><data-xml><sleep-am><when><date><y>2011</y><m>06</m><d>27</d></date><time><h>00</h><m>0</m><s>0</s></time></when><bed-time><h>23</h><m>13</m><s>0</s></bed-time><wake-time><h>7</h><m>25</m><s>0</s></wake-time><sleep-minutes>437</sleep-minutes><settling-minutes>13</settling-minutes>
+<awakening><when><h>3</h><m>0</m></when><minutes>10</minutes></awakening>
+<wake-state>1</wake-state></sleep-am><common><source>FitBit</source></common></data-xml></thing>
+<thing><type-id name='Sleep Session'>11c52484-7f1a-11db-aeac-87d355d89593</type-id><flags>0</flags><data-xml><sleep-am><when><date><y>2011</y><m>06</m><d>28</d></date><time><h>00</h><m>0</m><s>0</s></time></when><bed-time><h>23</h><m>24</m><s>0</s></bed-time><wake-time><h>4</h><m>28</m><s>0</s></wake-time><sleep-minutes>251</sleep-minutes><settling-minutes>5</settling-minutes>
+<awakening><when><h>3</h><m>0</m></when><minutes>10</minutes></awakening>
+<wake-state>1</wake-state></sleep-am><common><source>FitBit</source></common></data-xml></thing>
+<thing><type-id name='Sleep Session'>11c52484-7f1a-11db-aeac-87d355d89593</type-id><flags>0</flags><data-xml><sleep-am><when><date><y>2011</y><m>06</m><d>29</d></date><time><h>00</h><m>0</m><s>0</s></time></when><bed-time><h>22</h><m>51</m><s>0</s></bed-time><wake-time><h>6</h><m>54</m><s>0</s></wake-time><sleep-minutes>463</sleep-minutes><settling-minutes>7</settling-minutes>
+<awakening><when><h>3</h><m>0</m></when><minutes>10</minutes></awakening>
+<wake-state>1</wake-state></sleep-am><common><source>FitBit</source></common></data-xml></thing>

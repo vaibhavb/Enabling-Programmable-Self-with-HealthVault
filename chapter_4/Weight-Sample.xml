@@ -1,0 +1,22 @@
+<data-xml>
+  <weight>
+    <when>
+      <date>
+        <y>1990</y>
+        <m>1</m>
+        <d>1</d>
+      </date>
+      <time>
+        <h>1</h>
+        <m>0</m>
+        <s>0</s>
+        <f>0</f>
+      </time>
+    </when>
+    <value>
+      <kg>60</kg>
+      <display units="lb">132</display>
+    </value>
+  </weight>
+  <common/>
+</data-xml>

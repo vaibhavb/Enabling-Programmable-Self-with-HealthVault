@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microsoft.Health.Mobile", "HVMobileRegular\Microsoft.Health.Mobile.csproj", "{4087DA0D-FF98-4255-9FFD-09B89384C608}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoodTracker", "MoodTracker\MoodTracker.csproj", "{F2B9F50A-DB00-4671-8751-97B6681174F0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HVMobilePhone", "HVMobilePhone\HVMobilePhone.csproj", "{744C1C02-AAD9-4565-A3D7-E61383D10C5C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4087DA0D-FF98-4255-9FFD-09B89384C608}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4087DA0D-FF98-4255-9FFD-09B89384C608}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2B9F50A-DB00-4671-8751-97B6681174F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2B9F50A-DB00-4671-8751-97B6681174F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2B9F50A-DB00-4671-8751-97B6681174F0}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{F2B9F50A-DB00-4671-8751-97B6681174F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2B9F50A-DB00-4671-8751-97B6681174F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2B9F50A-DB00-4671-8751-97B6681174F0}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{744C1C02-AAD9-4565-A3D7-E61383D10C5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{744C1C02-AAD9-4565-A3D7-E61383D10C5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{744C1C02-AAD9-4565-A3D7-E61383D10C5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{744C1C02-AAD9-4565-A3D7-E61383D10C5C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

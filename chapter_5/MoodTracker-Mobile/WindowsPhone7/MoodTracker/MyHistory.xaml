@@ -1,0 +1,120 @@
+﻿<phone:PhoneApplicationPage 
+    x:Class="MoodTracker.MyHistory"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:amq="clr-namespace:AmCharts.Windows.QuickCharts;assembly=AmCharts.Windows.QuickCharts.WP"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d" d:DesignHeight="696" d:DesignWidth="480"
+    shell:SystemTray.IsVisible="True"
+    Loaded="PhoneApplicationPage_Loaded">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" 
+          Background="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- This is the progressbar for the application -->
+        <ProgressBar x:Name="c_progressBar" VerticalAlignment="Top"
+                     IsIndeterminate="True" Visibility="Collapsed"/>
+
+        <!--TitlePanel contains the name of the application and page title-->
+        <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,10">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition Width="120"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <TextBlock x:Name="ApplicationTitle" Text="MOOD TRACKER"
+                       Grid.Column="0"
+                       Style="{StaticResource PhoneTextNormalStyle}" TextAlignment="Left"/>
+                <TextBlock x:Name="c_RecordName"
+                       Grid.Column="1"
+                       Text=" " 
+                       Style="{StaticResource PhoneTextNormalStyle}"
+                       TextAlignment="Right"/>
+            </Grid>
+            <TextBlock x:Name="PageTitle" Text="My History" Margin="9,-7,0,0" 
+                       Style="{StaticResource PhoneTextTitle1Style}"/>
+        </StackPanel>
+
+
+        <!--ContentPanel - place additional content here-->
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+            <StackPanel>
+                <!-- Graph Label -->
+                <Grid Background="{StaticResource PhoneAccentBrush}"
+                      Margin="20 0 20 0">
+                    <TextBlock 
+                       Text=""
+                       Margin="10 0 0 10"
+                       x:Name="GraphLabel"></TextBlock>
+                </Grid>
+                
+                <amq:SerialChart x:Name="EmotionsChart"
+                             BorderThickness="1"
+                             DataSource="{Binding EmotionList}" 
+                             CategoryValueMemberPath="FormattedWhen"
+                             AxisForeground="White"
+                             PlotAreaBackground="Black"
+                             GridStroke="DarkGray" Height="463" Width="450">
+                    <amq:SerialChart.Graphs>
+                        <amq:LineGraph ValueMemberPath="Mood" 
+                                       Title="Mood" Brush="Blue"
+                                       StrokeThickness="6"
+                                       BorderBrush="Cornsilk"/>
+                        <amq:LineGraph ValueMemberPath="Stress" 
+                                       Title="Stress" Brush="#8000FF00" 
+                                       StrokeThickness="8" />
+                        <amq:LineGraph ValueMemberPath="Wellbeing" 
+                                       Title="Wellbeing" 
+                                       StrokeThickness="2"
+                                       Brush="#80FF0000"/>
+                    </amq:SerialChart.Graphs>
+                </amq:SerialChart>
+
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Button x:Name="Button_Prev"
+                        Width="120" Content="Prev" Click="Button_Click" 
+                        Background="{StaticResource PhoneAccentBrush}" 
+                            HorizontalAlignment="Left" Margin="0,-24,0,0"></Button>
+                    <Button x:Name="Button_Next"
+                            Height="80" Width="120" Content="Next" Click="Button_Click_1"
+                            Margin="0,-24,0,0"
+                            Visibility="Collapsed"
+                            Background="{StaticResource PhoneAccentBrush}"
+                            Grid.Column="1" HorizontalAlignment="Right"></Button>
+                </Grid>
+                
+            </StackPanel>
+        </Grid>
+        
+  
+    </Grid>
+
+    <!-- Menu -->
+    <phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar IsVisible="True" IsMenuEnabled="False">
+            <shell:ApplicationBarIconButton IconUri="/Images/app_bar/appbar_home.png"
+                                            Click="ApplicationBar_Home_Click"
+                                            Text="Home"/>
+            <shell:ApplicationBarIconButton IconUri="/Images/app_bar/appbar_plant.png"
+                                            Click="ApplicationBar_MoodPlant_Click"
+                                            Text="MoodTree"/>
+        </shell:ApplicationBar>
+    </phone:PhoneApplicationPage.ApplicationBar>
+    
+</phone:PhoneApplicationPage>

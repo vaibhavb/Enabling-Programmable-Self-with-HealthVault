@@ -1,0 +1,6 @@
+Source code and data examples for Chapter 2.
+
+1. sleepdata.xml is sleep data sample which can use to import sleep information in HealthVault record using HealthVault Powershell utility.
+2. SleepData.xlsx is sample sleep data.
+3. SleepData-Analysis.xlsx is the spreadsheet used to analyse sleep, exercise and awakenings data, as described in Chapter 2.
+4. HVPowerShell is source code for HealthVault Powershell Utility, but a maintained version is at -- https://github.com/vaibhavb/HvPosh.

@@ -1,0 +1,20 @@
+<complexType name="codable-value">
+  <sequence>
+    <element name="text" type="string">
+    </element>
+    <element name="code" type="this:coded-value" minOccurs="0" maxOccurs="unbounded">
+    </element>
+  </sequence>
+</complexType>
+<complexType name="coded-value">
+  <sequence>
+    <element name="value" type="string">
+    </element>
+    <element name="family" type="string" minOccurs="0">
+    </element>
+    <element name="type" type="string">
+    </element>
+    <element name="version" type="string" minOccurs="0">
+    </element>
+  </sequence>
+</complexType>

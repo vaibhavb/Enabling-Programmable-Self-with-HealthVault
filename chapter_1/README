@@ -1,0 +1,5 @@
+Source code and data examples for Chapter 1.
+
+1. Weight Measurement.csv, is export of data from HealthVault.
+2. Workbook_Weight.xlsx, is worksheet used in the chapter to mainpulate weight data.
+3. WeightTracker directory is the simple weight tracking samples using HealthVault .NET SDK.

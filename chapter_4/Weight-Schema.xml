@@ -1,0 +1,17 @@
+<schema xmlns:weight="urn:com.microsoft.wc.thing.weight"
+        xmlns:t="urn:com.microsoft.wc.thing.types"
+        xmlns:d="urn:com.microsoft.wc.dates"
+        xmlns="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="urn:com.microsoft.wc.thing.weight">
+  <import namespace="urn:com.microsoft.wc.thing.types" schemaLocation="base.xsd" />
+  <import namespace="urn:com.microsoft.wc.dates" schemaLocation="dates.xsd" />
+
+  <element name="weight">
+    <complexType>
+      <sequence>
+        <element name="when" minOccurs="1" maxOccurs="1" type="d:date-time"/>
+        <element name="value" minOccurs="1" maxOccurs="1" type="t:weight-value"/>
+      </sequence>
+    </complexType>
+  </element>
+</schema>

@@ -1,0 +1,25 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="QuantifiedSelf.master.cs" Inherits="QuantifiedSelf" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>QS</title>
+    <!-- 960 grid css framework -->
+    <link href="css/960.css" rel="stylesheet" type="text/css" />
+    <link href="css/reset.css" rel="stylesheet" type="text/css" />
+    <link href="css/text.css" rel="stylesheet" type="text/css" />
+    <!-- main css -->
+    <link href="css/main.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="wrapper" class="container_12">
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server"> 
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>

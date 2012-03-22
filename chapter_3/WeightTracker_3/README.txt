@@ -1,0 +1,17 @@
+This example accompanies Chapter 3 of the Book Enabling Programmable Self with HealthVault.
+
+Requirements to run the sample
+------------------------------
+1. Visual Studio 2010 Professional Edition (its available for 30-day free trial).
+2. HealthVault SDK libraries (You should add the HealthVault libraries in the in website\bin\ folder).
+
+
+Organization
+------------
+1. cert directory has the certificate used for this sample
+2. website has the visual studio solution
+
+
+Remarks
+-------
+1. Before running the sample you need to fix the full-certificate path in the website\web.config file for the following key: <add key="ApplicationCertificateFileName" ..

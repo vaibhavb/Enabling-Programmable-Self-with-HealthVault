@@ -1,0 +1,29 @@
+This is source code for examples in O'Reilly title - "Enabling Programmable Self with HealthVault". The errata and community contributions are maintained at http://www.enablingprogrammableself.com.
+
+Useful or relevant utilities
+-----------------------------
+1. The HealthVault Powershell Utility is availabe at - https://github.com/vaibhavb/HvPosh
+
+Requirements
+------------
+1. The .NET Projects requires *Visual Studio 2010 Professional Edition*.
+2. The samples are tested on Windows 7, Windows Server 2008 using .NET 3.5.
+3. Other requirements and external dependencies are detailed in the readme of appropriate examples.
+
+Organization
+------------
+1. The code samples are organized by Chapter.
+2. Data samples used in each Chapter are organized by the Chapters as well.
+
+
+Contributions
+-------------
+All contributions and bug reports are welcome.
+
+Maintainer
+----------
+The Author, vaibhavb@vitraag.com, is the current maintainer. Volunteers are welcome.
+
+License
+-------
+Unless specified all the code in this repository is Licensed under Apache License, Version 2.0 -- http://www.apache.org/licenses/LICENSE-2.0.html.

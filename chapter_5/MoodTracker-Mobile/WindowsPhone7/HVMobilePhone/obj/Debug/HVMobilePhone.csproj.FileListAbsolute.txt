@@ -1,0 +1,10 @@
+C:\Users\vaibhavb\Desktop\HealthVault-Phone\HVMobilePhone\Bin\Debug\HVMobilePhone.dll
+C:\Users\vaibhavb\Desktop\HealthVault-Phone\HVMobilePhone\Bin\Debug\HVMobilePhone.pdb
+C:\Users\vaibhavb\Desktop\HealthVault-Phone\HVMobilePhone\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\vaibhavb\Desktop\HealthVault-Phone\HVMobilePhone\obj\Debug\HVMobilePhone.dll
+C:\Users\vaibhavb\Desktop\HealthVault-Phone\HVMobilePhone\obj\Debug\HVMobilePhone.pdb
+C:\Users\vaibhavb\Desktop\QS with HealthVault\svn\code\chapter_4\MoodTracker-Mobile\WindowsPhone7\HVMobilePhone\Bin\Debug\HVMobilePhone.dll
+C:\Users\vaibhavb\Desktop\QS with HealthVault\svn\code\chapter_4\MoodTracker-Mobile\WindowsPhone7\HVMobilePhone\Bin\Debug\HVMobilePhone.pdb
+C:\Users\vaibhavb\Desktop\QS with HealthVault\svn\code\chapter_4\MoodTracker-Mobile\WindowsPhone7\HVMobilePhone\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\vaibhavb\Desktop\QS with HealthVault\svn\code\chapter_4\MoodTracker-Mobile\WindowsPhone7\HVMobilePhone\obj\Debug\HVMobilePhone.dll
+C:\Users\vaibhavb\Desktop\QS with HealthVault\svn\code\chapter_4\MoodTracker-Mobile\WindowsPhone7\HVMobilePhone\obj\Debug\HVMobilePhone.pdb

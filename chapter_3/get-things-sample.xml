@@ -1,0 +1,38 @@
+<wc-request:request xmlns:wc-request="urn:com.microsoft.wc.request">
+  <auth>
+    <hmac-data algName="HMACSHA1">lm2cusu8jt++Kdzr1K6CIeB6gms=</hmac-data>
+  </auth>
+  <header>
+    <method>GetThings</method>
+    <method-version>1</method-version>
+    <record-id>11111111-1111-1111-1111-222222222222</record-id>
+    <auth-session>
+      <auth-token>ASAAADNt1Jwbx85MgH9vkWzAINBoTCT/9n8jn8xgZc738EURUgP6otVKWi8nvUmOFaZM4dP1VR5w+SLJLiQ1UnoTxvdnd9bnjNuhAAbMMagaXngnQK30vWw3TunG3uw+rAZNnjncJNxYEH6XPpXt7gbkFjxE2CxGLBk858qFQmcmvBsZ9giPhupweMo9cmH6cKDRSvkwKaz81FA87j9w7ZnTCdPIsfEcpvlc8SnUj6Uzco6HIi4JnB1W4BjNuXvaFZjCHS6I5Fprowe7GyLWAQ4Qx6GL5mdeSZRYPT5IZxqVieiPESYEkWKb+8nwLmLLS4o+h49m725S0IiIxbLtrClNsJOXqomBiEZv6Zl+jgt1/W+JeYoT6KNWorcBK/mqxFjnMbBAksg12yq/aIPMwqGgQlvozCf20qcTUiNlG/nAIftzxHTvYUoOhJ9qK7LDHixy+FqPNYid2BfxsYhh1IlP8jPquiiALyG9eTsJb5v38HZrRNcPsExB7+N2ljhnPO0eWy/SzHgaiPI8Vij31baBEOzeK33D4QpOdPG+wsXjPFs00soe9w==</auth-token>
+      <user-auth-token>ASAAAEJsFrdImoBPhEuDFRUObCJt92wTEqYTMoeS2tvtkCQ/X3UpU6VToneeZoiA6MKfE4qvylI7V8a/7r75Hb50CEFZf9GNBl2/1eMTiLiIsIkOfU9d2x4rWuGwIhycBC9CbBZescm7wsOz6WfEWlMNDKlO3P7mGdAihWssytTc6ciVKN88Qw==</user-auth-token>
+    </auth-session>
+    <language>en</language>
+    <country>US</country>
+    <msg-time>2008-03-12T01:51:32.468Z</msg-time>
+    <msg-ttl>1800</msg-ttl>
+    <version>0.9.1730.2528</version>
+    <info-hash>
+      <hash-data algName="SHA1">HPTI5RNYEm5VM2CQi9NJ9w00V3M=</hash-data>
+    </info-hash>
+  </header>
+  <info>
+    <group name="GetWeights" max="10">
+      <id>d8460ea8-50d4-4c30-ad92-49d1a1020b52</id>
+      <filter>
+        <type-id>d8460ea8-50d4-4c30-ad92-49d1a1020b52</type-id>
+        <thing-state>Active</thing-state>
+        <created-app-id>1F82D899-22E0-43F2-A645-59EDB6927645</created-app-id>
+        <xpath>/thing/data-xml/weight/value/kg[.>=60]</xpath>
+      </filter>
+      <format>
+        <section>core</section>
+        <xml />
+      </format>
+      <current-version-only>true</current-version-only>
+    </group>
+  </info>
+</wc-request:request>

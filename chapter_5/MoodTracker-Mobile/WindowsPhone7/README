@@ -1,0 +1,17 @@
+This example accompanies Chapter 5 of the Book Enabling Programmable Self with HealthVault.
+
+Requirements & External to run the sample
+------------------------------
+1. Visual Studio 2010 Professional Edition (its available for 30-day free trial).
+2. Windows Phone 7 SDK, available for free from MSDN - http://www.microsoft.com/download/en/details.aspx?id=27570.
+2. Enable NuGet package management in and it will automagically fetch the following dependencies when building the solution --
+   2.1 amChartsQuickCharts for graphing
+3. The sample is using HealthVault Windows Phone 7 SDK from http://healthvaultwp7.codeplex.com/. You are encouraged to update the HVMobilePhone and HVMobileRegular directories with source from that project.
+
+
+Organization
+------------
+1. HVMobilePhone, HVMobileRegular are HealthVault Windows Phone 7 SDK directories
+2. MoodTracker is the Windows Phone 7 application
+
+

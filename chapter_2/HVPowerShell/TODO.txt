@@ -1,0 +1,6 @@
+1. Add ability to get-devices [DONE]
+2. Add ability to get-applications [DONE]
+3. Add ability to get-thingtype (schema) [DONE]
+4. Add ability to do get-thingtypes (schema) [DONE]
+5. Add ability to do get-method (schema) [DONE]
+6. Add ability to do get-methods (all methods) [DONE]

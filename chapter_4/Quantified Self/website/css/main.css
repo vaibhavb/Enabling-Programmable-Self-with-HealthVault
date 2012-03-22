@@ -1,0 +1,81 @@
+﻿body {
+  background: #fff;
+  color: #333;
+  font-size: 13px;
+  height: auto;
+  padding-bottom: 20px;
+}
+
+#header 
+{
+    padding-top: 10px;
+}
+
+#header h1 
+{
+    font-family: "Open Sans", "Gill Sans", "Gill Sans MT";
+    font-size: 30px;
+    text-transform:uppercase;
+}
+
+#site-nav 
+{
+    padding-top:15px;
+    text-align:right;
+}
+
+#site-nave a:hover {
+  text-decoration: underline;
+}
+
+hr{
+    border-top: 1px solid #999;
+    border-bottom: 1px dashed #666;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 2px 0 0;
+}
+
+h2
+{
+    font-family: "Open Sans", "Gill Sans", "Gill Sans MT";
+    font-size: 20px;
+    text-decoration:underline;
+    text-transform:uppercase;
+}
+
+h3
+{
+    font-family: "Open Sans", "Gill Sans", "Gill Sans MT";
+    font-size: 15px;
+    text-decoration:underline;
+    text-transform:capitalize;
+}
+
+.bar {border-right:1px solid red;padding-right:10px;}
+
+.datainput { padding-bottom:10px;}
+
+.datatable table,tr,td,th 
+{
+    border: 1px solid;
+    padding:2px;
+}
+
+p {
+  border: 1px solid #666;
+  overflow: hidden;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.container_12
+{
+  background-color: #fff;
+  background-repeat: repeat-y;
+  margin-bottom: 20px;
+}
+
+.container_12 {
+  /*background-image: url(../img/12_col.gif);*/
+}
