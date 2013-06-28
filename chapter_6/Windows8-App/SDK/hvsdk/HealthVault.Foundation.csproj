@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <Import Condition="'$(inetroot)' != ''" Project="$(EnvironmentConfig)" />
+    <PropertyGroup>
+        <ProjectGuid>{487C0351-DFBD-4FFA-AE98-4D7ED77F690F}</ProjectGuid>
+        <OutputType>Library</OutputType>
+        <AppDesignerFolder>Properties</AppDesignerFolder>
+        <RootNamespace>HealthVault.Foundation</RootNamespace>
+        <AssemblyName>HealthVault.Foundation</AssemblyName>
+        <DefaultLanguage>en-US</DefaultLanguage>
+        <ProjectTypeGuids>{BC8A1FFA-BEE3-4634-8014-F334798102B3};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+        <AssemblyClsCompliant>false</AssemblyClsCompliant>
+        <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+        <TargetFrameworkProfile />
+        <TargetFrameworkRevision />
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(inetroot)' == ''">
+        <DebugSymbols>true</DebugSymbols>
+        <DebugType>full</DebugType>
+        <Optimize>false</Optimize>
+        <OutputPath>bin\Debug\</OutputPath>
+        <DefineConstants>DEBUG;TRACE;NETFX_CORE</DefineConstants>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>4</WarningLevel>
+    </PropertyGroup>
+    <ItemGroup>
+        <Compile Include="AppInfo.cs" />
+        <Compile Include="ClientError.cs" />
+        <Compile Include="ClientException.cs" />
+        <Compile Include="ClientState.cs" />
+        <Compile Include="CrossThreadLock.cs" />
+        <Compile Include="CrossThreadLockScope.cs" />
+        <Compile Include="HResults.cs" />
+        <Compile Include="HttpStreamer.cs" />
+        <Compile Include="IHttpStreamer.cs" />
+        <Compile Include="Methods\BeginPutBlob.cs" />
+        <Compile Include="Methods\CreateAuthTokensWithTicket.cs" />
+        <Compile Include="Methods\SelectInstance.cs" />
+        <Compile Include="Types\CreateAuthTokensWithTicketResponse.cs" />
+        <Compile Include="Methods\CreateRecord.cs" />
+        <Compile Include="Methods\GetPersonInfo.cs" />
+        <Compile Include="Methods\CreateAccountWithTicket.cs" />
+        <Compile Include="Methods\CreateApplicationWithTicket.cs" />
+        <Compile Include="Methods\CreateCredentialTokenWithTicket.cs" />
+        <Compile Include="Methods\GetUpdatedRecordsForApplication.cs" />
+        <Compile Include="Methods\QueryPermissions.cs" />
+        <Compile Include="Types\AppInstanceName.cs" />
+        <Compile Include="Types\CreateAccountWithTicketResponse.cs" />
+        <Compile Include="Types\CreateCredentialTokenWithTicketResponse.cs" />
+        <Compile Include="Methods\GetServiceDefinition.cs" />
+        <Compile Include="Methods\GetThings.cs" />
+        <Compile Include="Methods\GetThingType.cs" />
+        <Compile Include="Methods\GetVocabulary.cs" />
+        <Compile Include="Methods\IsValidHealthVaultAccount.cs" />
+        <Compile Include="Methods\PutThings.cs" />
+        <Compile Include="Methods\RemoveApplicationRecordAuthorization.cs" />
+        <Compile Include="Methods\RemoveThings.cs" />
+        <Compile Include="Methods\SearchVocabulary.cs" />
+        <Compile Include="OfflinePersonInfo.cs" />
+        <Compile Include="IWebAuthorizer.cs" />
+        <Compile Include="Methods\CreateAuthenticatedSessionToken.cs" />
+        <Compile Include="Methods\GetAuthorizedPeople.cs" />
+        <Compile Include="Methods\HealthVaultMethod.cs" />
+        <Compile Include="Methods\NewApplicationProvisioningInfo.cs" />
+        <Compile Include="NetworkExtensions.cs" />
+        <Compile Include="RecordMethods.cs" />
+        <Compile Include="SecretStore.cs" />
+        <Compile Include="ServerError.cs" />
+        <Compile Include="ServerException.cs" />
+        <Compile Include="ServerStatusCode.cs" />
+        <Compile Include="ServiceDefinition.cs" />
+        <Compile Include="ServiceMethods.cs" />
+        <Compile Include="HealthVaultXmlReader.cs" />
+        <Compile Include="RecordReference.cs" />
+        <Compile Include="ResponseDeserializationContext.cs" />
+        <Compile Include="SerializationExtensions.cs" />
+        <Compile Include="ServerErrorContext.cs" />
+        <Compile Include="HttpTransport.cs" />
+        <Compile Include="IHttpTransport.cs" />
+        <Compile Include="ISerializer.cs" />
+        <Compile Include="Optional.cs" />
+        <Compile Include="ResponseStatus.cs" />
+        <Compile Include="ServiceInfo.cs" />
+        <Compile Include="RequestBody.cs" />
+        <Compile Include="RequestHeader.cs" />
+        <Compile Include="HealthVaultClient.cs" />
+        <Compile Include="ICryptographer.cs" />
+        <Compile Include="Request.cs" />
+        <Compile Include="RequestXsl.cs" />
+        <Compile Include="Response.cs" />
+        <Compile Include="Extensions.cs" />
+        <Compile Include="Cryptographer.cs" />
+        <Compile Include="AuthSession.cs" />
+        <Compile Include="Serializer.cs" />
+        <Compile Include="IValidatable.cs" />
+        <Compile Include="SerializerFactory.cs" />
+        <Compile Include="RequestAuth.cs" />
+        <Compile Include="Shell.cs" />
+        <Compile Include="Store\CachingObjectStore.cs" />
+        <Compile Include="Store\EncryptedObjectStore.cs" />
+        <Compile Include="Store\FolderObjectStore.cs" />
+        <Compile Include="Store\ICache.cs" />
+        <Compile Include="Store\IObjectStore.cs" />
+        <Compile Include="Store\LRUCache.cs" />
+        <Compile Include="Store\PurgeableCache.cs">
+            <SubType>Code</SubType>
+        </Compile>
+        <Compile Include="Types\BlobPutInfo.cs" />
+        <Compile Include="Types\CreateApplicationWithTicketResponse.cs" />
+        <Compile Include="Types\Culture.cs" />
+        <Compile Include="Types\Encrypted.cs" />
+        <Compile Include="Types\GetAuthorizedPeopleParams.cs" />
+        <Compile Include="Types\GetAuthorizedPeopleResponse.cs" />
+        <Compile Include="Types\GetServiceDefinitionResponse.cs" />
+        <Compile Include="Types\GetUpdatedRecordsForApplicationParams.cs" />
+        <Compile Include="Types\GetUpdatedRecordsForApplicationResponse.cs" />
+        <Compile Include="Types\GetPersonInfoResponse.cs" />
+        <Compile Include="Types\Instance.cs" />
+        <Compile Include="Types\Location.cs" />
+        <Compile Include="Types\MSATicket.cs" />
+        <Compile Include="Types\PersonInfo.cs" />
+        <Compile Include="Types\Record.cs" />
+        <Compile Include="Types\RecordState.cs" />
+        <Compile Include="Types\ServiceDefinitionResponseSections.cs" />
+        <Compile Include="Types\SessionCredential.cs" />
+        <Compile Include="StorageExtensions.cs" />
+        <Compile Include="Types\AppProvisioningInfo.cs" />
+        <Compile Include="Types\HmacContent.cs" />
+        <Compile Include="Types\CASTRequestParams.cs" />
+        <Compile Include="Types\CASTCredential.cs" />
+        <Compile Include="Types\Hash.cs" />
+        <Compile Include="Types\HashData.cs" />
+        <Compile Include="Types\Hmac.cs" />
+        <Compile Include="Types\HmacCredential.cs" />
+        <Compile Include="Types\UpdatedRecord.cs" />
+        <Compile Include="Types\UpdateRecordState.cs" />
+        <Compile Include="ValidationExtensions.cs" />
+        <Compile Include="HealthVaultXmlWriter.cs" />
+    </ItemGroup>
+    <PropertyGroup Condition="'$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '11.0' ">
+        <VisualStudioVersion>11.0</VisualStudioVersion>
+    </PropertyGroup>
+    <PropertyGroup Condition="!Exists('$(ExtendedTargetsPath)\Microsoft.Windows.UI.Xaml.CSharp.targets')">
+        <ExtendedTargetsPath>$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)</ExtendedTargetsPath>
+    </PropertyGroup>
+    <Import Project="$(ExtendedTargetsPath)\Microsoft.Windows.UI.Xaml.CSharp.targets" />
+</Project>

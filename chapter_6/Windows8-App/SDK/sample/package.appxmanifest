@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
+  <Identity Name="94a134e7-3b40-477e-819f-a57ad7640739" Version="1.0.0.0" Publisher="CN=umeshma" />
+  <Properties>
+    <DisplayName>hvJS</DisplayName>
+    <PublisherDisplayName>umeshma</PublisherDisplayName>
+    <Logo>images\storelogo.png</Logo>
+  </Properties>
+  <Prerequisites>
+    <OSMinVersion>6.2.1</OSMinVersion>
+    <OSMaxVersionTested>6.2.1</OSMaxVersionTested>
+  </Prerequisites>
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+  <Applications>
+    <Application Id="App" StartPage="default.html">
+      <VisualElements DisplayName="hvJS" Logo="images\logo.png" SmallLogo="images\smalllogo.png" Description="hvJS" ForegroundText="light" BackgroundColor="#464646">
+        <DefaultTile ShowName="allLogos" />
+        <SplashScreen Image="images\splashscreen.png" />
+      </VisualElements>
+      <Extensions>
+        <Extension Category="windows.shareTarget" StartPage="share.html">
+          <ShareTarget>
+            <DataFormat>HealthVault.ItemTypes.3d34d87e-7fc1-4153-800f-f56592cb0d17</DataFormat>
+            <DataFormat>HealthVault.ItemTypes.ca3c57f4-f4c1-4e15-be67-0a3caf5414ed</DataFormat>
+          </ShareTarget>
+        </Extension>
+      </Extensions>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="internetClient" />
+  </Capabilities>
+</Package>

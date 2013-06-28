@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <Import Condition="'$(inetroot)' != ''" Project="$(EnvironmentConfig)" />
+    <PropertyGroup>
+        <ProjectGuid>{D730E5F9-D549-47A7-A925-649422FDD0D8}</ProjectGuid>
+        <OutputType>winmdobj</OutputType>
+        <AppDesignerFolder>Properties</AppDesignerFolder>
+        <RootNamespace>HealthVault.Sample</RootNamespace>
+        <AssemblyName>HealthVault.Sample</AssemblyName>
+        <DefaultLanguage>en-US</DefaultLanguage>
+        <ProjectTypeGuids>{BC8A1FFA-BEE3-4634-8014-F334798102B3};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+        <AssemblyClsCompliant>false</AssemblyClsCompliant>
+        <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+        <TargetFrameworkProfile />
+        <TargetFrameworkRevision />
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(inetroot)' == ''">
+        <DebugSymbols>true</DebugSymbols>
+        <DebugType>full</DebugType>
+        <Optimize>false</Optimize>
+        <OutputPath>bin\Debug\</OutputPath>
+        <DefineConstants>DEBUG;TRACE;NETFX_CORE</DefineConstants>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>4</WarningLevel>
+    </PropertyGroup>
+    <ItemGroup>
+        <Compile Include="ServiceMethodProvider.cs" />
+        <Compile Include="Utility.cs" />
+    </ItemGroup>
+    <ItemGroup>
+        <ProjectReference Include="..\..\hvrt\HealthVault.Runtime.csproj">
+            <Project>{4892813d-1216-4462-b734-ddbffcc6c6e4}</Project>
+            <Name>HealthVault.Runtime</Name>
+        </ProjectReference>
+        <ProjectReference Include="..\..\hvsdk\HealthVault.Foundation.csproj">
+            <Project>{487c0351-dfbd-4ffa-ae98-4d7ed77f690f}</Project>
+            <Name>HealthVault.Foundation</Name>
+        </ProjectReference>
+    </ItemGroup>
+    <PropertyGroup Condition="'$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '11.0' ">
+        <VisualStudioVersion>11.0</VisualStudioVersion>
+    </PropertyGroup>
+    <PropertyGroup Condition="!Exists('$(ExtendedTargetsPath)\Microsoft.Windows.UI.Xaml.CSharp.targets')">
+        <ExtendedTargetsPath>$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)</ExtendedTargetsPath>
+    </PropertyGroup>
+    <Import Project="$(ExtendedTargetsPath)\Microsoft.Windows.UI.Xaml.CSharp.targets" />
+</Project>

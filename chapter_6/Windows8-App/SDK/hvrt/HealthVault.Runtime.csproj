@@ -1,0 +1,227 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <Import Condition="'$(inetroot)' != ''" Project="$(EnvironmentConfig)" />
+    <PropertyGroup>
+        <ProjectGuid>{4892813D-1216-4462-B734-DDBFFCC6C6E4}</ProjectGuid>
+        <OutputType>winmdobj</OutputType>
+        <AppDesignerFolder>Properties</AppDesignerFolder>
+        <RootNamespace>HealthVault</RootNamespace>
+        <AssemblyName>HealthVault.Runtime</AssemblyName>
+        <DefaultLanguage>en-US</DefaultLanguage>
+        <ProjectTypeGuids>{BC8A1FFA-BEE3-4634-8014-F334798102B3};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+        <AssemblyClsCompliant>false</AssemblyClsCompliant>
+        <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+        <TargetFrameworkProfile />
+        <TargetFrameworkRevision />
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(inetroot)' == ''">
+        <DebugSymbols>true</DebugSymbols>
+        <DebugType>full</DebugType>
+        <Optimize>false</Optimize>
+        <OutputPath>bin\Debug\</OutputPath>
+        <DefineConstants>DEBUG;TRACE;NETFX_CORE</DefineConstants>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>4</WarningLevel>
+    </PropertyGroup>
+    <ItemGroup>
+        <Compile Include="Extensions.cs" />
+        <Compile Include="Foundation\ClientErrorNumber.cs" />
+        <Compile Include="Foundation\HealthVaultAppSettings.cs" />
+        <Compile Include="Foundation\ServerErrorNumber.cs" />
+        <Compile Include="Foundation\IServiceDefinition.cs" />
+        <Compile Include="Foundation\IRecord.cs" />
+        <Compile Include="Foundation\RecordImpl.cs" />
+        <Compile Include="Foundation\Vocabs.cs" />
+        <Compile Include="ItemTypes\Allergy.cs" />
+        <Compile Include="ItemTypes\BloodPressure.cs" />
+        <Compile Include="ItemTypes\Cholesterol.cs" />
+        <Compile Include="ItemTypes\Condition.cs" />
+        <Compile Include="ItemTypes\Contact.cs" />
+        <Compile Include="ItemTypes\BasicV2.cs" />
+        <Compile Include="ItemTypes\BloodGlucose.cs" />
+        <Compile Include="ItemTypes\MealDefinition.cs" />
+        <Compile Include="ItemTypes\Personal.cs" />
+        <Compile Include="ItemTypes\DietaryIntake.cs" />
+        <Compile Include="ItemTypes\Exercise.cs" />
+        <Compile Include="ItemTypes\File.cs" />
+        <Compile Include="ItemTypes\HealthGoal.cs" />
+        <Compile Include="ItemTypes\Immunization.cs" />
+        <Compile Include="ItemTypes\Insurance.cs" />
+        <Compile Include="ItemTypes\ItemDataTypedList.cs" />
+        <Compile Include="ItemTypes\ItemProxy.cs" />
+        <Compile Include="ItemTypes\ItemTypeManager.cs" />
+        <Compile Include="ItemTypes\PersonalImage.cs" />
+        <Compile Include="ItemTypes\Procedure.cs" />
+        <Compile Include="LazyField.cs" />
+        <Compile Include="LazyList.cs" />
+        <Compile Include="Store\ISynchronizedView.cs" />
+        <Compile Include="Store\RecordItemCommitScheduler.cs" />
+        <Compile Include="Store\RecordItemEditOperation.cs" />
+        <Compile Include="Store\RecordItemChangeManager.cs" />
+        <Compile Include="Store\RecordItemChangeTable.cs" />
+        <Compile Include="Store\RecordItemCommitErrorHandler.cs" />
+        <Compile Include="Store\RecordItemLock.cs" />
+        <Compile Include="Store\RecordItemLockTable.cs" />
+        <Compile Include="Store\RemoteItemStore.cs" />
+        <Compile Include="Store\RecordItemChange.cs" />
+        <Compile Include="Store\StoreErrorNumber.cs" />
+        <Compile Include="Store\SynchronizedType.cs" />
+        <Compile Include="Store\SynchronizedTypeManager.cs" />
+        <Compile Include="Store\SynchronizedViewItemRefresher.cs" />
+        <Compile Include="Store\ViewData.cs" />
+        <Compile Include="Store\ViewKeyCollection.cs" />
+        <Compile Include="Store\SynchronizedView.cs" />
+        <Compile Include="Store\ViewKey.cs" />
+        <Compile Include="Store\LocalItemStore.cs" />
+        <Compile Include="Store\LocalStore.cs" />
+        <Compile Include="Store\LocalRecordStore.cs" />
+        <Compile Include="Store\LocalRecordStoreTable.cs" />
+        <Compile Include="Store\LocalVocabularyStore.cs" />
+        <Compile Include="Store\ObjectCache.cs" />
+        <Compile Include="Store\PendingGetResult.cs" />
+        <Compile Include="Store\StoredQuery.cs" />
+        <Compile Include="Store\SynchronizedStore.cs" />
+        <Compile Include="Store\SynchronizedViewSynchronizer.cs" />
+        <Compile Include="Types\AccountInfo.cs" />
+        <Compile Include="Types\ApproxDate.cs" />
+        <Compile Include="Types\ApproxDateTime.cs" />
+        <Compile Include="Types\ApproxMeasurement.cs" />
+        <Compile Include="Types\Audit.cs" />
+        <Compile Include="Types\Address.cs" />
+        <Compile Include="Types\CreateRecordParams.cs" />
+        <Compile Include="Types\BlobInfo.cs" />
+        <Compile Include="Types\ConcentrationValue.cs" />
+        <Compile Include="Types\BloodGlucoseMeasurement.cs" />
+        <Compile Include="Types\CreateAccountPersonInfo.cs" />
+        <Compile Include="Types\CreateRecordResponse.cs" />
+        <Compile Include="Types\Culture.cs" />
+        <Compile Include="Types\DietaryIntakeItem.cs" />
+        <Compile Include="Types\Instance.cs" />
+        <Compile Include="Types\IsValidHealthVaultAccountResponse.cs" />
+        <Compile Include="Types\Location.cs" />
+        <Compile Include="Types\OneToFive.cs" />
+        <Compile Include="Types\DayOfWeek.cs" />
+        <Compile Include="Types\Language.cs" />
+        <Compile Include="Types\GeneralMeasurement.cs" />
+        <Compile Include="Types\GoalAssociatedTypeInfo.cs" />
+        <Compile Include="Types\GoalRange.cs" />
+        <Compile Include="Types\GoalRecurrence.cs" />
+        <Compile Include="Types\NutritionInformation.cs" />
+        <Compile Include="Types\Permission.cs" />
+        <Compile Include="Types\QueryPermissionsRequestParams.cs" />
+        <Compile Include="Types\QueryPermissionsResponse.cs" />
+        <Compile Include="Types\SelectInstanceResponse.cs" />
+        <Compile Include="Types\ThingTypeGetParams.cs" />
+        <Compile Include="Types\ThingTypeGetResults.cs" />
+        <Compile Include="Types\ThingTypePermission.cs" />
+        <Compile Include="Types\UnitConversions.cs" />
+        <Compile Include="Types\VersionInformation.cs" />
+        <Compile Include="Types\VersionInformationCollection.cs" />
+        <Compile Include="Types\Versions.cs" />
+        <Compile Include="Types\VocabData.cs" />
+        <Compile Include="Types\ExerciseSegment.cs" />
+        <Compile Include="Types\ExerciseSegmentCollection.cs" />
+        <Compile Include="Types\FoodEnergyValue.cs" />
+        <Compile Include="Types\ItemDataBlob.cs" />
+        <Compile Include="Types\Blob.cs" />
+        <Compile Include="Types\BlobCollection.cs" />
+        <Compile Include="Types\CodableValue.cs" />
+        <Compile Include="Types\CodedValue.cs" />
+        <Compile Include="Types\CodedValueCollection.cs" />
+        <Compile Include="Types\Collection.cs" />
+        <Compile Include="Types\Contact.cs" />
+        <Compile Include="Types\Date.cs" />
+        <Compile Include="Types\DateTime.cs" />
+        <Compile Include="Types\Email.cs" />
+        <Compile Include="Types\EmailAddress.cs" />
+        <Compile Include="Types\IConstrainedString.cs" />
+        <Compile Include="Types\ItemExtension.cs" />
+        <Compile Include="Types\ItemFilterCollection.cs" />
+        <Compile Include="Types\ItemTypeDefinition.cs" />
+        <Compile Include="Types\Name.cs" />
+        <Compile Include="Types\NonNegativeDouble.cs" />
+        <Compile Include="Types\NutritionFact.cs" />
+        <Compile Include="Types\PendingItem.cs" />
+        <Compile Include="Types\Person.cs" />
+        <Compile Include="Types\Phone.cs" />
+        <Compile Include="Types\Prescription.cs" />
+        <Compile Include="Types\RelatedItem.cs" />
+        <Compile Include="Types\String255.cs" />
+        <Compile Include="Types\StringCollection.cs" />
+        <Compile Include="Types\StringZ1024.cs" />
+        <Compile Include="Types\StringZ255.cs" />
+        <Compile Include="Types\StructuredDateTime.cs" />
+        <Compile Include="Types\Day.cs" />
+        <Compile Include="Types\Hour.cs" />
+        <Compile Include="Types\ItemKeyList.cs" />
+        <Compile Include="Types\Millisecond.cs" />
+        <Compile Include="Types\Minute.cs" />
+        <Compile Include="Types\Month.cs" />
+        <Compile Include="Types\RecordQueryResponse.cs" />
+        <Compile Include="Foundation\Delegates.cs" />
+        <Compile Include="Foundation\HealthVaultApp.cs">
+            <SubType>Code</SubType>
+        </Compile>
+        <Compile Include="Foundation\IAppInfo.cs" />
+        <Compile Include="Foundation\IServiceInfo.cs" />
+        <Compile Include="ItemTypes\Height.cs" />
+        <Compile Include="ItemTypes\IItemDataTyped.cs" />
+        <Compile Include="ItemTypes\Medication.cs" />
+        <Compile Include="ItemTypes\Weight.cs" />
+        <Compile Include="Types\ItemQueryResult.cs" />
+        <Compile Include="Types\PositiveInt.cs" />
+        <Compile Include="Foundation\UserInfo.cs" />
+        <Compile Include="Store\LocalVault.cs" />
+        <Compile Include="Types\BooleanValue.cs" />
+        <Compile Include="Types\IConstrainedDouble.cs" />
+        <Compile Include="Types\IConstrainedInt.cs" />
+        <Compile Include="Types\ItemSections.cs" />
+        <Compile Include="Types\NonNegativeInt.cs" />
+        <Compile Include="Types\PositiveDouble.cs" />
+        <Compile Include="Types\DisplayValue.cs" />
+        <Compile Include="Types\IHealthVaultType.cs" />
+        <Compile Include="Types\ItemData.cs" />
+        <Compile Include="Types\ItemDataCommon.cs" />
+        <Compile Include="Types\ItemFilter.cs" />
+        <Compile Include="Types\ItemKey.cs" />
+        <Compile Include="Types\ItemQuery.cs" />
+        <Compile Include="Types\ItemType.cs" />
+        <Compile Include="Types\ItemView.cs" />
+        <Compile Include="Types\LengthMeasurement.cs" />
+        <Compile Include="Types\RecordItem.cs" />
+        <Compile Include="Types\Second.cs" />
+        <Compile Include="Types\StructuredMeasurement.cs" />
+        <Compile Include="Types\StructuredNameValue.cs" />
+        <Compile Include="Types\StructuredNameValueCollection.cs" />
+        <Compile Include="Types\Time.cs" />
+        <Compile Include="Types\VocabCodeSet.cs" />
+        <Compile Include="Types\VocabFamily.cs" />
+        <Compile Include="Types\VocabGetParams.cs" />
+        <Compile Include="Types\VocabGetResults.cs" />
+        <Compile Include="Types\VocabIdentifier.cs" />
+        <Compile Include="Types\VocabItem.cs" />
+        <Compile Include="Types\VocabName.cs" />
+        <Compile Include="Types\VocabQueryResult.cs" />
+        <Compile Include="Types\VocabQueryResults.cs" />
+        <Compile Include="Types\VocabSearch.cs" />
+        <Compile Include="Types\VocabSearchText.cs" />
+        <Compile Include="Types\WeightMeasurement.cs" />
+        <Compile Include="Types\Year.cs" />
+        <Compile Include="UIThreadDispatcher.cs" />
+        <Compile Include="ValidationExtensions.cs" />
+        <Compile Include="WebAuthorizer.cs" />
+    </ItemGroup>
+    <ItemGroup>
+        <ProjectReference Include="..\hvsdk\HealthVault.Foundation.csproj">
+            <Project>{487c0351-dfbd-4ffa-ae98-4d7ed77f690f}</Project>
+            <Name>HealthVault.Foundation</Name>
+        </ProjectReference>
+    </ItemGroup>
+    <PropertyGroup Condition="'$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '11.0' ">
+        <VisualStudioVersion>11.0</VisualStudioVersion>
+    </PropertyGroup>
+    <PropertyGroup Condition="!Exists('$(ExtendedTargetsPath)\Microsoft.Windows.UI.Xaml.CSharp.targets')">
+        <ExtendedTargetsPath>$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)</ExtendedTargetsPath>
+    </PropertyGroup>
+    <Import Project="$(ExtendedTargetsPath)\Microsoft.Windows.UI.Xaml.CSharp.targets" />
+</Project>
