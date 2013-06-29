@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>homePage</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.1.0/css/ui-dark.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+
+    <link href="/css/default.css" rel="stylesheet" />
+    <link href="/pages/home/home.css" rel="stylesheet" />
+    <script src="/pages/home/hv.js"></script>
+    <script src="/pages/home/home.js"></script>
+    <script src="/pages/home/hvlib.js"></script>
+    <script src="/pages/home/itemMakers.js"></script>
+    <script src="/pages/home/test.js"></script>
+    <script src="/pages/home/testStore.js"></script>
+    <style>
+        body {
+            overflow-y:scroll;
+        }
+        #output {
+            height: 400px;
+        }
+        #itemList.tr {
+            height:200px;
+            width:800px;
+        }
+        table td {
+            border-bottom:solid;
+            vertical-align:top;
+        }
+        button {
+            font-size:small;
+        }
+    </style>
+</head>
+<body>
+    <!-- The content that will be loaded and displayed. -->
+    <div class="fragment homepage">
+        <header aria-label="Header content" role="banner">
+            <button class="win-backbutton" aria-label="Back" disabled type="button"></button>
+            <h2 class="titlearea win-type-ellipsis">
+                <span id="recordImageCont"></span><span class="pagetitle">Offline Store & Commit Test</span>
+            </h2>
+        </header>
+        <section aria-label="Main content" role="main">
+            <div style="width:1200px;overflow:auto">
+                <button onclick="store_testRender()">Display</button>
+                <button onclick="store_testSync()">Sync</button>
+                <button onclick="testSynchronizedViewFor(HealthVault.ItemTypes.BloodPressure.typeID);">SyncSyncView</button>
+                <button onclick="store_testNew()">New</button>
+                <button onclick="store_testUpdate(false)">Update</button>
+                <button onclick="store_testUpdate(true)">UpdateWithDate</button>
+                <button onclick="store_testRemove()">Remove</button>
+                <button onclick="store_testFilterAbnormal()">Filter Abnormal</button>
+                <button onclick="setLocalStoreMemCacheSize(1000)">MemCacheOn</button>             
+                <button onclick="setLocalStoreMemCacheSize(0)">MemCacheOff</button>             
+                <button onclick="store_deleteRecordStore()">Purge Local</button>
+                <p />
+                <button onclick="store_enableChangeCommit(true)">Enable ChangeCommit</button>
+                <button onclick="store_enableChangeCommit(false)">Disable ChangeCommit</button>
+                <button onclick="store_enableBackgroundCommit(true)">Enable BackgroundCommit</button>
+                <button onclick="store_enableBackgroundCommit(false)">Disable BackgroundCommit</button>
+                <button onclick="store_enableImmediateCommit(true);">Enable Immediate</button>
+                <button onclick="store_enableImmediateCommit(false)">Disable Immediate</button>
+                <br />
+                <button onclick="store_testEditLockFail()">Edit Lock Fail</button>
+                <button onclick="store_testRemoveLockFail()">Remove Lock Fail</button>
+                <button onclick="store_testUpdateLock(false)">TestUpdateLock</button>
+                <button onclick="store_testNewWeightBackground()">New WEIGHT</button>
+                <p>
+                <button onclick="store_testGetUpdatedRecordsSince()">GetUpdatedRecordsServer</button>
+                <button onclick="store_forceServerFailures(true)">Failures On</button>
+                <button onclick="store_forceServerFailures(false)">Failures Off</button>
+                <button onclick="store_testKeysNoLocalItems()">KeysWithNoLocalItems</button>
+                </p>
+                <p>
+                <button onclick="store_testMultiSync()">Multi Sync</button>
+                <button onclick="store_testMultiRefresh()">Multi Refresh</button>
+                <button onclick="store_testRenderType(HealthVault.ItemTypes.Weight.typeID)">Display Weight</button>
+                <button onclick="store_testRenderType(HealthVault.ItemTypes.BloodGlucose.typeID)">Display Glucose</button>
+                </p>
+             </div>
+            <table>
+                <tr>
+                    <td><textarea id="output">Result...</textarea></td>
+                    <td>
+                        <div style="width:840px;overflow:scroll;-ms-overflow-style:scrollbar" id="itemList"></div>
+                    </td>
+                </tr>
+            </table>
+        </section>
+    </div>
+</body>
+</html>

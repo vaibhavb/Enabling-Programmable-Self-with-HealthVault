@@ -1,0 +1,156 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>homePage</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.1.0/css/ui-dark.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+
+    <link href="/css/default.css" rel="stylesheet" />
+    <link href="/pages/home/home.css" rel="stylesheet" />
+    <script src="/pages/home/hv.js"></script>
+    <script src="/pages/home/home.js"></script>
+    <script src="/pages/home/hvlib.js"></script>
+    <script src="/pages/home/itemMakers.js"></script>
+    <script src="/pages/home/test.js"></script>
+    <script src="/pages/home/testStore.js"></script>
+    <style>
+        body {
+            overflow-y:scroll;
+        }
+        #output {
+            height: 400px;
+        }
+        #itemList.tr {
+            height:200px;
+            width:800px;
+        }
+        table td {
+            border-bottom:solid
+        }
+        button {
+            font-size:small;
+        }
+    </style>
+</head>
+<body>
+    <!-- The content that will be loaded and displayed. -->
+    <div class="fragment homepage">
+        <header aria-label="Header content" role="banner">
+            <button class="win-backbutton" aria-label="Back" disabled type="button"></button>
+            <h2 class="titlearea win-type-ellipsis">
+                <span id="recordImageCont"></span><span class="pagetitle">HealthVault Test Sample!</span>
+            </h2>
+        </header>
+        <section aria-label="Main content" role="main">
+            <div style="width:1200px;overflow:auto">
+                <button onclick="startApp();">Start</button>
+                <button onclick="restartApp();">Restart</button>
+                <button onclick="authMore();">Auth More</button>
+                <button onclick="isAuthOnServer();">IsAuthOnServer</button>
+                <button onclick="displayUser();">DisplayUserInfo</button>
+                <button onclick="removeAppRecordAuthOnServer();">RemoveAppRecordAuthOnServer</button>
+             </div>
+            <div>------</div>
+            <div style="width:1200px;overflow:auto">
+                <button onclick="WinJS.Navigation.navigate('/pages/home/testStore.html')">Test STORE</button>
+            </div>
+            <div>------</div>
+            <div style="width:1200px;overflow:auto">
+                <button onclick="testSynchronizedViewFor(typeIDForSyncViewTest())">SyncViewTest</button>
+                <button onclick="deleteSyncViewFor(typeIDForSyncViewTest());">DeleteSyncView</button>
+                <button onclick="synchronizeViewFor(typeIDForSyncViewTest());">SyncSyncView</button>
+                <button onclick="testSynchronizedStoreFor(typeIDForSyncViewTest());">GetSyncStore</button>
+                <button onclick="testSynchronizedStoreFor(typeIDForSyncViewTest(), true);">GetSyncStoreWait</button>
+                <button onclick="setLocalStoreMemCacheSize(1000)">MemCacheOn</button>             
+                <button onclick="setLocalStoreMemCacheSize(0)">MemCacheOff</button>             
+                <button onclick="deleteRecordStore();">DeleteLocalItems</button>
+             </div>
+            <div>------</div>
+            <div style="width:1200px;overflow:auto">
+                <button onclick="testVocab();">Get Vocab</button>
+                <button onclick="testVocabSearch();">Search Vocab</button>
+                <button onclick="testVocabStore();">Vocab Store</button>
+             </div>
+            <div>------</div>
+            <div style="width:1200px;overflow:auto;">
+                <button onclick="testGetThings();">Get ALL</button>
+                <button onclick="testPutThingsRaw();">Add raw xml</button>
+                <button onclick="testParseRaw();">Parse raw xml</button>
+                <button onclick="testQuery(HealthVault.ItemTypes.Allergy.queryFor());">Allergy</button>
+                <button onclick="testPutItem(makeAllergy());">Add Allergy</button>
+                <button onclick="testMakeBasic()">Add Basic</button>
+                <button onclick="testQuery(HealthVault.ItemTypes.BasicV2.queryFor())">Basic</button>
+                <button onclick="testQuery(HealthVault.ItemTypes.BloodGlucose.queryFor());">Blood Glucose</button>
+                <button onclick="testPutItem(makeBloodGlucose());">Add Blood Glucose</button>
+                <button onclick="testQuery(HealthVault.ItemTypes.BloodPressure.queryFor());">Blood Pressure</button>
+                <button onclick="testPutItem(makeBloodPressure());">Add Blood Pressure</button>
+                <button onclick="testQuery(HealthVault.ItemTypes.Cholesterol.queryFor());">Cholesterol</button>
+                <button onclick="testPutItem(makeCholesterol());">Add Cholesterol</button>
+                <button onclick="testQuery(HealthVault.ItemTypes.Condition.queryFor());">Condition</button>
+                <button onclick="testPutItem(makeCondition());">Add Condition</button>
+                <button onclick="testQuery(HealthVault.ItemTypes.DietaryIntake.queryFor());">Diet</button>
+                <button onclick="testQuery(HealthVault.ItemTypes.Exercise.queryFor());">Exercise</button>
+                <button onclick="testPutItem(makeExercise());">Add Exercise</button>
+                <button onclick="testQuery(HealthVault.ItemTypes.File.queryFor());">Files</button>
+                <button onclick="testOpenFile();">Open File</button>
+                <button onclick="testSaveFile();">Save File</button>
+                <button onclick="testUploadFile();">Upload File</button>
+                <button onclick="testQuery(HealthVault.ItemTypes.Height.queryFor());">Height</button>
+                <button onclick="testPutItem(makeHeight());">Add Height</button>
+                <button onclick="testQuery(HealthVault.ItemTypes.Immunization.queryFor());">Immunization</button>
+                <button onclick="testPutItem(makeImmunization());">Add Immunization</button>
+                <button onclick="testQuery(HealthVault.ItemTypes.Medication.queryFor());">Meds</button>
+                <button onclick="testPutItem(makeMedication());">Add Meds</button>
+                <button onclick="testMakePersonal()">Add Personal</button>
+                <button onclick="testQuery(HealthVault.ItemTypes.Personal.queryFor())">Personal</button>
+                <button onclick="testQueryWithPendingGet(HealthVault.ItemTypes.Procedure.queryFor());">Procedure</button>
+                <button onclick="testPutItem(makeProcedure());">Add Procedure</button>
+                <button onclick="testQuery(HealthVault.ItemTypes.Weight.queryFor());">Weight</button>
+                <button onclick="testPutItem(makeWeight());">Add Weight</button>
+                <button onclick="testRemoveThings();">Remove Latest Weight</button>
+                <button onclick="testPutItem(makeEmergencyContact());">Add Emergency Contact</button>
+                <button onclick="testQuery(HealthVault.ItemTypes.Contact.queryFor());">Emergency or Provider Contact</button>
+                <button onclick="testPutItem(makeInsurance());">Add Insurance</button>
+                <button onclick="testQuery(HealthVault.ItemTypes.Insurance.queryFor());">Insurance</button>
+                <button onclick="testPutItem(makeHealthGoal());">Add Health Goal</button>
+                <button onclick="testQuery(HealthVault.ItemTypes.HealthGoal.queryFor());">Health Goal</button>
+                <button onclick="testQueryPermissions(HealthVault.ItemTypes.Weight.typeID);">Query Permissions for Weight</button>
+            </div>
+            <div>------</div>
+            <div style="width:1200px;overflow:auto;">
+                <button onclick="WinJS.Navigation.navigate('/pages/grid/grid.html')">LISTVIEW Weights</button>
+                <button onclick="testGetPersonalImage();">Refresh Personal Image</button>
+                <button onclick="testMakePersonalImage();">Add Personal Image</button>
+                <button onclick="testGetThingTypes();">Get Thing Type Information</button>
+            </div>
+            <div>------</div>
+            <div style="width:1200px;overflow:auto;">
+                <!-- Demonstrates a basic call to GetServiceDefinition. --> 
+                <button onclick="testServiceMethod('getServiceDefinitionAsync');">GetServiceDefinition (no parameters)</button>
+                <!-- Demonstrates a call to GetServiceDefinition that passes in a timestamp that is later than the
+                    last-updated date on the server. No results are returned. You can cache the GetServiceDefinition
+                    response and pass in the timestamp from the response in subsequent calls, allowing you to
+                    poll for updates and only download the full response when data changes. --> 
+                <button onclick="testServiceMethod('getServiceDefinitionWithMaxDateAsync');">GetServiceDefinition with last-updated date</button>
+                <!-- Demonstrates a call to GetServiceDefinition that only downloads the specified sections of
+                    the response. Only downloading the data you need means a faster response time.  --> 
+                <button onclick="testServiceMethod('getServiceDefinitionShellPlatformTopologyAsync');">GetServiceDefinitionShellPlatformTopology</button>
+                <!-- Demonstrates a call to SelectInstance with UK as the country. The UK HealthVault instance is returned. -->
+                <button onclick="testSelectInstance();">SelectInstance (UK)</button>
+            </div>
+            <table>
+                <tr>
+                    <td style="vertical-align:top"><textarea id="output">Result...</textarea></td>
+                    <td style="vertical-align:top">
+                        <div style="width:840px;overflow:scroll;-ms-overflow-style:scrollbar" id="itemList"></div>
+                    </td>
+                </tr>
+            </table>
+        </section>
+    </div>
+</body>
+</html>

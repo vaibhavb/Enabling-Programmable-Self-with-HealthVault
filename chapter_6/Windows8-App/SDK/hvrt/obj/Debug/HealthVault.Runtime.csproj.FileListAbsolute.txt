@@ -1,0 +1,16 @@
+C:\Users\Vaibhav\Documents\GitHub\Enabling-Programmable-Self-with-HealthVault\chapter_6\Windows8-App\SDK\hvrt\bin\Debug\HealthVault.winmd
+C:\Users\Vaibhav\Documents\GitHub\Enabling-Programmable-Self-with-HealthVault\chapter_6\Windows8-App\SDK\hvrt\bin\Debug\HealthVault.pdb
+C:\Users\Vaibhav\Documents\GitHub\Enabling-Programmable-Self-with-HealthVault\chapter_6\Windows8-App\SDK\hvrt\bin\Debug\HealthVault.pri
+C:\Users\Vaibhav\Documents\GitHub\Enabling-Programmable-Self-with-HealthVault\chapter_6\Windows8-App\SDK\hvrt\bin\Debug\HealthVault.Foundation.dll
+C:\Users\Vaibhav\Documents\GitHub\Enabling-Programmable-Self-with-HealthVault\chapter_6\Windows8-App\SDK\hvrt\bin\Debug\HealthVault.Foundation.pdb
+C:\Users\Vaibhav\Documents\GitHub\Enabling-Programmable-Self-with-HealthVault\chapter_6\Windows8-App\SDK\hvrt\bin\Debug\HealthVault.Foundation.pri
+C:\Users\Vaibhav\Documents\GitHub\Enabling-Programmable-Self-with-HealthVault\chapter_6\Windows8-App\SDK\hvrt\obj\Debug\HealthVault.Runtime.csprojResolveAssemblyReference.cache
+C:\Users\Vaibhav\Documents\GitHub\Enabling-Programmable-Self-with-HealthVault\chapter_6\Windows8-App\SDK\hvrt\obj\Debug\HealthVault.winmd
+C:\Users\Vaibhav\Documents\GitHub\Enabling-Programmable-Self-with-HealthVault\chapter_6\Windows8-App\SDK\hvrt\obj\Debug\HealthVault.pdb
+C:\Users\Vaibhav\Documents\GitHub\Enabling-Programmable-Self-with-HealthVault\chapter_6\Windows8-App\SDK\hvrt\obj\Debug\HealthVault.winmdobj
+C:\Users\Vaibhav\Documents\GitHub\Enabling-Programmable-Self-with-HealthVault\chapter_6\Windows8-App\SDK\hvrt\obj\Debug\HealthVault.compile.pdb
+C:\Users\Vaibhav\Documents\GitHub\Enabling-Programmable-Self-with-HealthVault\chapter_6\Windows8-App\SDK\hvrt\obj\Debug\priconfig.xml
+C:\Users\Vaibhav\Documents\GitHub\Enabling-Programmable-Self-with-HealthVault\chapter_6\Windows8-App\SDK\hvrt\obj\Debug\layout.resfiles
+C:\Users\Vaibhav\Documents\GitHub\Enabling-Programmable-Self-with-HealthVault\chapter_6\Windows8-App\SDK\hvrt\obj\Debug\resources.resfiles
+C:\Users\Vaibhav\Documents\GitHub\Enabling-Programmable-Self-with-HealthVault\chapter_6\Windows8-App\SDK\hvrt\obj\Debug\pri.resfiles
+C:\Users\Vaibhav\Documents\GitHub\Enabling-Programmable-Self-with-HealthVault\chapter_6\Windows8-App\SDK\hvrt\obj\Debug\LanguageQualifiers.txt

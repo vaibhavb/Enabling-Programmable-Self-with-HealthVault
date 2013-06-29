@@ -1,0 +1,7 @@
+C:\Users\Vaibhav\Documents\GitHub\Enabling-Programmable-Self-with-HealthVault\chapter_6\Windows8-App\SDK\hvrt\HealthVault.Runtime.csproj;neutral
+C:\Users\Vaibhav\Documents\GitHub\Enabling-Programmable-Self-with-HealthVault\chapter_6\Windows8-App\SDK\hvrt\HealthVault.Runtime.csproj;neutral
+C:\Users\Vaibhav\Documents\GitHub\Enabling-Programmable-Self-with-HealthVault\chapter_6\Windows8-App\SDK\hvsdk\HealthVault.Foundation.csproj;neutral
+C:\Users\Vaibhav\Documents\GitHub\Enabling-Programmable-Self-with-HealthVault\chapter_6\Windows8-App\SDK\hvsdk\HealthVault.Foundation.csproj;neutral
+C:\Users\Vaibhav\Documents\GitHub\Enabling-Programmable-Self-with-HealthVault\chapter_6\Windows8-App\SDK\hvsdk\HealthVault.Foundation.csproj;neutral
+C:\Users\Vaibhav\Documents\GitHub\Enabling-Programmable-Self-with-HealthVault\chapter_6\Windows8-App\SDK\sample\hvJS.jsproj;neutral
+C:\Users\Vaibhav\Documents\GitHub\Enabling-Programmable-Self-with-HealthVault\chapter_6\Windows8-App\SDK\sample\Library\HealthVault.Sample.csproj;neutral

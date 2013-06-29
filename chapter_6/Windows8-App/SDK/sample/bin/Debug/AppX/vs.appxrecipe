@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>vaibhav</Machine>
+    <WindowsUser>Vaibhav</WindowsUser>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <RegisteredManifestChecksum>6697A88A72455884493061D484DE98CC2B7E3172F4646DCB14C1C1136E80C778</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>94a134e7-3b40-477e-819f-a57ad7640739_1.0.0.0_neutral__j52kcwjsp5m3w</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>94a134e7-3b40-477e-819f-a57ad7640739_j52kcwjsp5m3w!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>94a134e7-3b40-477e-819f-a57ad7640739</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=umeshma</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\Vaibhav\Documents\GitHub\Enabling-Programmable-Self-with-HealthVault\chapter_6\Windows8-App\SDK\sample\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-06-29T00:03:38.668</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\Vaibhav\Documents\GitHub\Enabling-Programmable-Self-with-HealthVault\chapter_6\Windows8-App\SDK\sample\Library\bin\Debug\HealthVault.Sample.winmd">
+      <PackagePath>HealthVault.Sample.winmd</PackagePath>
+      <Modified>2013-06-29T00:02:32.728</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Vaibhav\Documents\GitHub\Enabling-Programmable-Self-with-HealthVault\chapter_6\Windows8-App\SDK\hvrt\bin\Debug\HealthVault.winmd">
+      <PackagePath>HealthVault.winmd</PackagePath>
+      <Modified>2013-06-29T00:02:31.165</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Vaibhav\Documents\GitHub\Enabling-Programmable-Self-with-HealthVault\chapter_6\Windows8-App\SDK\hvrt\bin\Debug\HealthVault.Foundation.dll">
+      <PackagePath>HealthVault.Foundation.dll</PackagePath>
+      <Modified>2013-06-29T00:02:25.321</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Vaibhav\Documents\GitHub\Enabling-Programmable-Self-with-HealthVault\chapter_6\Windows8-App\SDK\hvrt\bin\Debug\HealthVault.pdb">
+      <PackagePath>HealthVault.pdb</PackagePath>
+      <Modified>2013-06-29T00:02:31.150</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Vaibhav\Documents\GitHub\Enabling-Programmable-Self-with-HealthVault\chapter_6\Windows8-App\SDK\sample\Library\bin\Debug\HealthVault.Sample.pdb">
+      <PackagePath>HealthVault.Sample.pdb</PackagePath>
+      <Modified>2013-06-29T00:02:32.713</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Vaibhav\Documents\GitHub\Enabling-Programmable-Self-with-HealthVault\chapter_6\Windows8-App\SDK\hvrt\bin\Debug\HealthVault.Foundation.pdb">
+      <PackagePath>HealthVault.Foundation.pdb</PackagePath>
+      <Modified>2013-06-29T00:02:25.103</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Vaibhav\Documents\GitHub\Enabling-Programmable-Self-with-HealthVault\chapter_6\Windows8-App\SDK\sample\css\default.css">
+      <PackagePath>css\default.css</PackagePath>
+      <Modified>2013-05-14T17:21:00.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Vaibhav\Documents\GitHub\Enabling-Programmable-Self-with-HealthVault\chapter_6\Windows8-App\SDK\sample\css\share.css">
+      <PackagePath>css\share.css</PackagePath>
+      <Modified>2013-05-14T17:21:00.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Vaibhav\Documents\GitHub\Enabling-Programmable-Self-with-HealthVault\chapter_6\Windows8-App\SDK\sample\pages\home\home.css">
+      <PackagePath>pages\home\home.css</PackagePath>
+      <Modified>2013-05-14T17:21:00.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Vaibhav\Documents\GitHub\Enabling-Programmable-Self-with-HealthVault\chapter_6\Windows8-App\SDK\sample\images\logo.png">
+      <PackagePath>images\logo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-05-14T17:21:00.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Vaibhav\Documents\GitHub\Enabling-Programmable-Self-with-HealthVault\chapter_6\Windows8-App\SDK\sample\images\smalllogo.png">
+      <PackagePath>images\smalllogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-05-14T17:21:00.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Vaibhav\Documents\GitHub\Enabling-Programmable-Self-with-HealthVault\chapter_6\Windows8-App\SDK\sample\images\splashscreen.png">
+      <PackagePath>images\splashscreen.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-05-14T17:21:00.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Vaibhav\Documents\GitHub\Enabling-Programmable-Self-with-HealthVault\chapter_6\Windows8-App\SDK\sample\images\storelogo.png">
+      <PackagePath>images\storelogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-05-14T17:21:00.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Vaibhav\Documents\GitHub\Enabling-Programmable-Self-with-HealthVault\chapter_6\Windows8-App\SDK\sample\js\default.js">
+      <PackagePath>js\default.js</PackagePath>
+      <Modified>2013-05-14T17:21:00.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Vaibhav\Documents\GitHub\Enabling-Programmable-Self-with-HealthVault\chapter_6\Windows8-App\SDK\sample\js\navigator.js">
+      <PackagePath>js\navigator.js</PackagePath>
+      <Modified>2013-05-14T17:21:00.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Vaibhav\Documents\GitHub\Enabling-Programmable-Self-with-HealthVault\chapter_6\Windows8-App\SDK\sample\js\share.js">
+      <PackagePath>js\share.js</PackagePath>
+      <Modified>2013-05-14T17:21:00.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Vaibhav\Documents\GitHub\Enabling-Programmable-Self-with-HealthVault\chapter_6\Windows8-App\SDK\sample\pages\grid\grid.js">
+      <PackagePath>pages\grid\grid.js</PackagePath>
+      <Modified>2013-05-14T17:21:00.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Vaibhav\Documents\GitHub\Enabling-Programmable-Self-with-HealthVault\chapter_6\Windows8-App\SDK\sample\pages\home\home.js">
+      <PackagePath>pages\home\home.js</PackagePath>
+      <Modified>2013-05-14T17:21:00.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Vaibhav\Documents\GitHub\Enabling-Programmable-Self-with-HealthVault\chapter_6\Windows8-App\SDK\sample\pages\home\hv.js">
+      <PackagePath>pages\home\hv.js</PackagePath>
+      <Modified>2013-05-14T17:21:00.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Vaibhav\Documents\GitHub\Enabling-Programmable-Self-with-HealthVault\chapter_6\Windows8-App\SDK\sample\pages\home\hvLib.js">
+      <PackagePath>pages\home\hvLib.js</PackagePath>
+      <Modified>2013-05-14T17:21:00.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Vaibhav\Documents\GitHub\Enabling-Programmable-Self-with-HealthVault\chapter_6\Windows8-App\SDK\sample\pages\home\itemMakers.js">
+      <PackagePath>pages\home\itemMakers.js</PackagePath>
+      <Modified>2013-05-14T17:21:00.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Vaibhav\Documents\GitHub\Enabling-Programmable-Self-with-HealthVault\chapter_6\Windows8-App\SDK\sample\pages\home\test.js">
+      <PackagePath>pages\home\test.js</PackagePath>
+      <Modified>2013-06-24T18:46:36.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Vaibhav\Documents\GitHub\Enabling-Programmable-Self-with-HealthVault\chapter_6\Windows8-App\SDK\sample\pages\home\testStore.js">
+      <PackagePath>pages\home\testStore.js</PackagePath>
+      <Modified>2013-05-14T17:21:00.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Vaibhav\Documents\GitHub\Enabling-Programmable-Self-with-HealthVault\chapter_6\Windows8-App\SDK\sample\pages\grid\grid.html">
+      <PackagePath>pages\grid\grid.html</PackagePath>
+      <Modified>2013-05-14T17:21:00.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Vaibhav\Documents\GitHub\Enabling-Programmable-Self-with-HealthVault\chapter_6\Windows8-App\SDK\sample\pages\home\testStore.html">
+      <PackagePath>pages\home\testStore.html</PackagePath>
+      <Modified>2013-05-14T17:21:00.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Vaibhav\Documents\GitHub\Enabling-Programmable-Self-with-HealthVault\chapter_6\Windows8-App\SDK\sample\pages\home\home.html">
+      <PackagePath>pages\home\home.html</PackagePath>
+      <Modified>2013-06-24T18:46:36.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Vaibhav\Documents\GitHub\Enabling-Programmable-Self-with-HealthVault\chapter_6\Windows8-App\SDK\sample\default.html">
+      <PackagePath>default.html</PackagePath>
+      <Modified>2013-05-14T17:21:00.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Vaibhav\Documents\GitHub\Enabling-Programmable-Self-with-HealthVault\chapter_6\Windows8-App\SDK\sample\share.html">
+      <PackagePath>share.html</PackagePath>
+      <Modified>2013-05-14T17:21:00.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Vaibhav\Documents\GitHub\Enabling-Programmable-Self-with-HealthVault\chapter_6\Windows8-App\SDK\sample\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2013-06-29T00:03:36.933</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResolvedSDKReference Include="C:\Program Files\Microsoft SDKs\Windows\v8.0\ExtensionSDKs\Microsoft.WinJS.1.0\1.0\">
+      <Name>Microsoft.WinJS.1.0</Name>
+      <Version>1.0.8514.0</Version>
+      <Architecture>Neutral</Architecture>
+      <FrameworkIdentity>Name=Microsoft.WinJS.1.0, MinVersion=1.0.8514.0</FrameworkIdentity>
+      <AppxLocation>C:\Program Files\Microsoft SDKs\Windows\v8.0\ExtensionSDKs\Microsoft.WinJS.1.0\1.0\Microsoft.WinJS.1.0.appx</AppxLocation>
+    </ResolvedSDKReference>
+  </ItemGroup>
+</Project>
